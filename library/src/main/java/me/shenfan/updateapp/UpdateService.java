@@ -261,6 +261,7 @@ public class UpdateService extends Service {
     }
 
     private void start(){
+        builder.setTicker("开始下载");
         builder.setContentTitle(appName);
         builder.setContentText(getString(R.string.update_app_model_prepare, 1));
         manager.notify(notifyId, builder.build());
